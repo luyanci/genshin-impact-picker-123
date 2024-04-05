@@ -1,24 +1,37 @@
----
 name: Bug反馈
 about: Create a report to help us improve
 title: "[BUG]"
 labels: bug
 assignees: ''
-
----
-
-**Bug描述**
-
-
-**使用方式**
-
-
-**bug截图**
-有时候，截个bug图能帮助开发者快速发现问题
-
-**相关信息**
- - 操作系统: [如Windows,MIUI,HyperOS]
- - 浏览器 [如chrome,firefox]
- - 站点链接(如果有用公共站点的话，记得把这个也填了)：
-
-**其他信息**
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您花时间填写这个 Bug 报告
+  - type: textarea
+    id: bug-1
+    attributes:
+      label: |
+        BUG描述(文字/截图/视频)
+      description: |
+        请使用尽量准确的描述, 否则你的问题将会被直接关闭
+    validations:
+      required: true
+  - type: textarea
+    id: bug-2
+    attributes:
+      label: |
+        期望行为(文字/截图/视频)
+      description: |
+        请使用尽量准确的描述, 否则你的问题将会被直接关闭
+    validations:
+      required: true
+  - type: textarea
+    id: bug-3
+    attributes:
+      label: |
+        实际行为(文字/截图/视频)
+      description: |
+        请使用尽量准确的描述, 否则你的问题将会被直接关闭
+    validations:
+      required: true
