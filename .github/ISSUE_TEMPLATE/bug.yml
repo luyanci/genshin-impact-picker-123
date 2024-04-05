@@ -20,13 +20,23 @@ body:
     id: bug-2
     attributes:
       label: |
-        期望行为(文字/截图/视频)
+        一些相关信息
+      description: |
+        请写出自己的操作系统版本，使用方案(如公共站点/electron程序/tauri程序)
+        如果使用了公共站点，请把使用的公共站点链接和浏览器版本一块写上
+    validations:
+      required: true
+  - type: textarea
+    id: bug-3
+    attributes:
+      label: |
+        实际行为(文字/截图/视频)
       description: |
         请使用尽量准确的描述, 否则你的问题将会被直接关闭
     validations:
       required: true
   - type: textarea
-    id: bug-3
+    id: bug-4
     attributes:
       label: |
         实际行为(文字/截图/视频)
