@@ -30,7 +30,7 @@ body:
     id: bug-3
     attributes:
       label: |
-        实际行为(文字/截图/视频)
+        预期行为(文字/截图/视频)
       description: |
         请使用尽量准确的描述, 否则你的问题将会被直接关闭
     validations:
